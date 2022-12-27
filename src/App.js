@@ -1,11 +1,6 @@
-import './App.css';
+import "./app.css";
+import Rotas from "./routes";
 
-function App() {
-  return (
-    <div className="App">
-      
-    </div>
-  );
+export default function App() {
+	return <Rotas />;
 }
-
-export default App;
