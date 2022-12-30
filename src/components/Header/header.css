@@ -1,0 +1,61 @@
+:root {
+	--backGroundHeader: rgb(127, 189, 255);
+	--backGroundList: rgb(108, 162, 221);
+	--backGroundEachList: rgb(83, 126, 172);
+	--fontColor: rgb(0, 0, 0);
+}
+.Header {
+	width: 100%;
+	height: auto;
+	background-color: var(--backGroundHeader);
+	display: flex;
+	flex-direction: row;
+	justify-content: left;
+	align-items: center;
+}
+.Titel-Header {
+	width: 70%;
+	font-size: 30px;
+	text-align: center;
+}
+.List-Container {
+	width: 10%;
+	position: inherit;
+	text-align: left;
+}
+.Lista-de-Rotas {
+	display: none;
+	width: 100px;
+	text-align: center;
+	list-style: none;
+	background-color: var(--backGroundList);
+}
+.Lista-de-Rotas li {
+	text-align: center;
+	padding: 10px 0;
+	border: 0.5px solid black;
+}
+.Lista-de-Rotas li > a {
+	text-decoration: none;
+	color: var(--fontColor);
+	font-size: 20px;
+	font-weight: 400;
+	padding: 0 25px;
+}
+.Image-bar {
+	width: 60px;
+	height: 50px;
+	margin-left: 15%;
+}
+.Lista-de-Rotas li:hover {
+	background-color: var(--backGroundEachList);
+}
+.List-Container:hover > .Lista-de-Rotas {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.List-Container:hover > .Image-bar {
+	display: none;
+}

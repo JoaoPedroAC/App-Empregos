@@ -1,1 +1,36 @@
+/* 
+font wiagth:
+300 = light
+400 = regular
+600 = semi bold
+ */
+@font-face {
+	font-family: "Work Sans";
+	src: url("./fonts/WorkSans-Light.ttf") format("truetype"), url("./fonts/WorkSans-LightItalic.ttf") format("truetype"),
+		url("./fonts/WorkSans-Regular.ttf") format("truetype"), url("./fonts/WorkSans-SemiBold.ttf") format("truetype"),
+		url("./fonts/WorkSans-SemiBoldItalic.ttf") format("truetype");
+}
 
+* {
+	font-family: "Work Sans";
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	box-sizing: border-box;
+}
+
+html,
+body,
+.App {
+	height: 100%;
+}
+
+h1 {
+	font-weight: 600;
+}
+h2 {
+	font-weight: 400;
+}
+p {
+	font-weight: 300;
+}

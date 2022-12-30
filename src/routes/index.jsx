@@ -1,7 +1,7 @@
 import { Route, BrowserRouter, Routes } from "react-router-dom";
 
 // import App from "../App";
-import { Teste } from "../templates/Teste";
+import { Home } from "../templates/Home";
 
 export default function rotas() {
 	return (
@@ -10,8 +10,7 @@ export default function rotas() {
 			{/* Routes é o novo Switch, responsavel por guiar as rotas sem fazer com que +1 rota seja executada ao mesmo tempo*/}
 			<Routes>
 				{/* definirá as rotas */}
-				<Route path="/" element={<h1>ddddddddddd</h1>} />
-				<Route path="/teste" element={<Teste />} />
+				<Route path="/" element={<Home />} />
 			</Routes>
 		</BrowserRouter>
 	);
