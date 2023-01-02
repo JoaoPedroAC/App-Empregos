@@ -22,6 +22,9 @@ export default function Header(props) {
 			<div className="Titel-Header">
 				<H1>InJobs</H1>
 			</div>
+			<div className="Buttons-container">
+				<button onClick={()=> alert('Usúario saiu!')}>Log Out</button>
+			</div>
 		</header>
 	);
 }

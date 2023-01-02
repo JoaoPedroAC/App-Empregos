@@ -1,61 +1,97 @@
 :root {
-	--backGroundHeader: rgb(127, 189, 255);
-	--backGroundList: rgb(108, 162, 221);
-	--backGroundEachList: rgb(83, 126, 172);
-	--fontColor: rgb(0, 0, 0);
+  --backGroundHeader: rgb(127, 189, 255);
+  --backGroundButtonClicked: rgb(90, 134, 180);
+  --backGroundList: rgb(108, 162, 221);
+  --backGroundEachList: rgb(83, 126, 172);
+  --fontColor: rgb(0, 0, 0);
 }
 .Header {
-	width: 100%;
-	height: auto;
-	background-color: var(--backGroundHeader);
-	display: flex;
-	flex-direction: row;
-	justify-content: left;
-	align-items: center;
+  width: 100%;
+  height: auto;
+  background-image: linear-gradient(to left, var(--backGroundHeader), rgb(89, 145, 205));
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
 }
-.Titel-Header {
-	width: 70%;
-	font-size: 30px;
-	text-align: center;
-}
+/* Área das listas de rotas */
 .List-Container {
-	width: 10%;
-	position: inherit;
-	text-align: left;
+  width: 10%;
+  position: inherit;
+  text-align: left;
 }
 .Lista-de-Rotas {
-	display: none;
-	width: 100px;
-	text-align: center;
-	list-style: none;
-	background-color: var(--backGroundList);
+  display: none;
+  width: 100px;
+  text-align: center;
+  list-style: none;
+  background-color: var(--backGroundList);
 }
 .Lista-de-Rotas li {
-	text-align: center;
-	padding: 10px 0;
-	border: 0.5px solid black;
+  text-align: center;
+  padding: 10px 0;
+  border: 0.5px solid black;
 }
 .Lista-de-Rotas li > a {
-	text-decoration: none;
-	color: var(--fontColor);
-	font-size: 20px;
-	font-weight: 400;
-	padding: 0 25px;
+  text-decoration: none;
+  color: var(--fontColor);
+  font-size: 20px;
+  font-weight: 400;
+  padding: 0 25px;
 }
 .Image-bar {
-	width: 60px;
-	height: 50px;
-	margin-left: 15%;
+  width: 60px;
+  height: 50px;
+  margin-left: 15%;
 }
 .Lista-de-Rotas li:hover {
-	background-color: var(--backGroundEachList);
+  background-color: var(--backGroundEachList);
 }
 .List-Container:hover > .Lista-de-Rotas {
-	display: block;
-	position: absolute;
-	top: 0;
-	left: 0;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .List-Container:hover > .Image-bar {
-	display: none;
+  display: none;
+}
+/* Área do título central */
+.Titel-Header {
+  width: 80%;
+  font-size: 30px;
+  text-align: center;
+}
+/* Área dos botões */
+.Buttons-container {
+  width: 15%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  padding-right: 10px;
+}
+.Buttons-container > button {
+  background-color: var(--backGroundHeader);
+  width: 70px;
+  height: 40px;
+  border-radius: 10px;
+  border: 2px groove var(--backGroundButtonClicked);
+  border-radius: 10px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.Buttons-container > button:active {
+  background-color: var(--backGroundButtonClicked);
+  color: white;
+}
+.alert {
+  width: 100%;
+  height: auto;
+  background-color: brown;
+  position: absolute;
+  text-align: right;
 }
