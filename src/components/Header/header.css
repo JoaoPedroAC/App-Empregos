@@ -22,7 +22,6 @@
 }
 .Lista-de-Rotas {
   display: none;
-  width: 100px;
   text-align: center;
   list-style: none;
   background-color: var(--backGroundList);
